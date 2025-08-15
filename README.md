@@ -1,7 +1,6 @@
 # 🌳 Bittree — Your Link in Bio, Reimagined
 
 Bittree is a modern **Next.js 14** application that lets you create a single, shareable link for all your content.  
-Inspired by Linktree but with a fresh design and more customization.
 
 ---
 
@@ -11,6 +10,8 @@ Inspired by Linktree but with a fresh design and more customization.
 - **Custom handle** for your Bittree profile
 - Optimized images with Next.js `<Image />`
 - Responsive and mobile-friendly layout
+- Dynamic routes for handles
+
 
 ---
 
