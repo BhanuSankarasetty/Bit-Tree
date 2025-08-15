@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌳 Bittree — Your Link in Bio, Reimagined
 
-## Getting Started
+Bittree is a modern **Next.js 14** application that lets you create a single, shareable link for all your content.  
+Inspired by Linktree but with a fresh design and more customization.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+- **Modern UI** with Tailwind CSS
+- **Instant navigation** using Next.js App Router
+- **Custom handle** for your Bittree profile
+- Optimized images with Next.js `<Image />`
+- Responsive and mobile-friendly layout
+
+---
+
+## 📂 Project Structure
+
+```
+bittree/
+├── app/ # Next.js app directory (routes, pages, API)
+│ ├── [handle]/ # Dynamic route for user profiles
+│ ├── generate/ # Handle generation page
+│ ├── page.js # Homepage
+│ ├── layout.js # Root layout
+│ ├── globals.css # Global styles
+├── components/ # Reusable UI components
+├── public/ # Static assets (images, icons, fonts)
+├── lib/ # Utility functions
+├── package.json # Project dependencies
+├── README.md # This file
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: JavaScript / JSX
+- **Routing**: App Router with dynamic routes
+- **Package Manager**: npm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📦 Installation
+```
+# Clone this repository
+git clone https://github.com/yourusername/bittree.git
+cd bittree
+```
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+```
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start development server
+```
+npm run dev
+```
+- The app will be running at http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Environment Variables
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create a .env.local file in the root directory and add:
+```
+NEXT_PUBLIC_HOST=http://localhost:3000
+```
